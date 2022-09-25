@@ -1,13 +1,9 @@
 <svg fill="none" viewBox="0 0 1200 750" width="1200" height="750" xmlns="http://www.w3.org/2000/svg">
 	<foreignObject width="100%" height="100%">
 		<div xmlns="http://www.w3.org/1999/xhtml">
-                        <defs>
-        <style>
-           
-            @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,400i,700,700i")
-        </style>
-    </defs>
+          
 <style>
+  
   body {
     margin: 0;
     padding: 0;
@@ -67,19 +63,18 @@
   overflow: hidden; /* hide text behind the cursor */
   margin: 0.5rem auto;
   font-size: 2rem;
-  font-weight: bold;
+  font-family: Trebuchet MS;
 }
 
 .line__1 {
     font-size: 40px;
     margin-top: 2em;
-  font-family: 'Source Code Pro', monospace;
     color: blue;
   border-right: 4px solid rgba(2, 1, 23, 0.9);
 
   /* define animation types for text + cursor */
   animation: animated-text__1 3s steps(20, end) 1s 1 normal both,
-    animated-cursor__1 900ms steps(30, end) 8;
+    animated-cursor__1 900ms steps(30, end) 5;
 }
 
 .line__2 {
@@ -90,8 +85,8 @@
   /* define animation types for text + cursor */
   animation: animated-text__2 0.6s steps(5, end) 1s 1 normal both,
     animated-cursor__2 900ms steps(30, end) infinite;
-  -webkit-animation-delay: 7s;
-  animation-delay: 7s;
+  -webkit-animation-delay: 4.5s;
+  animation-delay: 4.5s;
 }
 
 @keyframes animated-cursor__1 {
@@ -117,7 +112,7 @@
     width: 0;
   }
   to {
-    width: 27rem;
+    width: 24rem;
   }
 }
 
@@ -126,7 +121,7 @@
     width: 0;
   }
   to {
-    width: 7rem;
+    width: 8rem;
   }
 }
 
@@ -153,3 +148,4 @@
         </div>
 	</foreignObject>
 </svg>
+
