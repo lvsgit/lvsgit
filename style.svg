@@ -1,1 +1,156 @@
-<svg fill="none" viewBox="0 0 1200 750" width="1200" height="750" xmlns="http://www.w3.org/2000/svg"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml"><style>@keyframes animate{0%{background-position:0 0}50%{background-position:300% 0}}#container{width:100%;height:100vh;display:flex;align-items:center;justify-content:center}.card{position:relative;width:90%;height:80%;padding:40px 0;text-align:center;background:#020117;border-radius:12px}.acard,.bcard{content:&quot;&quot;;position:absolute;background:linear-gradient(45deg,#eb0084,#0034cc,#0d0,#dd0,#dd3030,#dd0,#0d0,#0034cc,#eb0084);background-size:400%;z-index:-1;animation:animate 60s linear infinite}.acard{top:-6px;left:-6px;border-radius:16px;width:calc(100% + 12px);height:calc(100% + 12px)}.bcard{top:-2px;left:-2px;width:calc(100% + 4px);height:calc(100% + 4px);filter:blur(50px)}</style><div id="container"><h1 class="card"><div class="acard"/><p style="color:#00f;font-size:30px">hello</p><div class="bcard"/></h1></div></div></foreignObject></svg>
+<svg fill="none" viewBox="0 0 1200 750" width="1200" height="750" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+                        <defs>
+        <style>
+           
+            @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,400i,700,700i")
+        </style>
+    </defs>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    background-size: cover;
+  }
+  #container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .card {
+    position: relative;
+    width: 90%;
+    height: 80%;
+    padding: 40px 0;
+    text-align: center;
+    background: #020117;
+    border-radius: 12px;
+  }
+  .acard {
+  content: "";
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  border-radius: 16px;
+  background: linear-gradient(45deg, #eb0084, #0034cc, #00dd00, #dddd00, #dd3030, 
+    #dddd00, #00dd00, #0034cc, #eb0084
+      );
+  background-size: 400%;
+  width: calc(100%  + 12px);
+  height: calc(100% + 12px);
+  z-index: -1;
+  animation: animate 40s linear infinite;
+  }
+  .bcard {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  background: linear-gradient(45deg, #eb0084, #0034cc, #00dd00, #dddd00, #dd3030, 
+    #dddd00, #00dd00, #0034cc, #eb0084
+      );
+  background-size: 400%;
+  width: calc(100%  + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: animate 40s linear infinite;
+  filter: blur(50px);
+  }
+
+.line__1,
+.line__2 {
+  white-space: nowrap; /* keep text in one line */
+  overflow: hidden; /* hide text behind the cursor */
+  margin: 0.5rem auto;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.line__1 {
+    font-size: 40px;
+    margin-top: 2em;
+  font-family: 'Source Code Pro', monospace;
+    color: blue;
+  border-right: 4px solid rgba(2, 1, 23, 0.9);
+
+  /* define animation types for text + cursor */
+  animation: animated-text__1 3s steps(20, end) 1s 1 normal both,
+    animated-cursor__1 900ms steps(30, end) 8;
+}
+
+.line__2 {
+    font-size: 40px;
+    color: blue;
+  border-right: 5px solid rgba(2, 1, 23, 0.9);
+
+  /* define animation types for text + cursor */
+  animation: animated-text__2 0.6s steps(5, end) 1s 1 normal both,
+    animated-cursor__2 900ms steps(30, end) infinite;
+  -webkit-animation-delay: 7s;
+  animation-delay: 7s;
+}
+
+@keyframes animated-cursor__1 {
+  from {
+    border-right-color: rgba(2, 1, 23, 0.9);
+  }
+  to {
+    border-right-color: rgba(20, 20, 255, 0.8);
+  }
+}
+
+@keyframes animated-cursor__2 {
+  from {
+    border-right-color: rgba(2, 1, 23, 0.9);
+  }
+  to {
+    border-right-color: rgba(20, 20, 255, 0.8);
+  }
+}
+
+@keyframes animated-text__1 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 27rem;
+  }
+}
+
+@keyframes animated-text__2 {
+  from {
+    width: 0;
+  }
+  to {
+    width: 7rem;
+  }
+}
+
+@keyframes animate{
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+</style>
+<div id="container">
+  <h1 class="card">
+    <div class="acard"></div>
+        <p class="line__1">Welcome to my wall</p>
+        <p class="line__2">@lvs</p>
+    <div class="bcard"></div>
+  </h1>
+</div>  
+
+        </div>
+	</foreignObject>
+</svg>
+
