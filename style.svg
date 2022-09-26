@@ -147,8 +147,6 @@
 }
 
 .image {
-  color: red;
- 
 position: absolute;
 display: block;
 width: 400px;
